@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+main{
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 35vh;
+    border-radius: 20px;
+    text-align: center;
+    padding: 4rem 3rem 2rem 2rem;
+    background-color: hsl(217, 19%, 24%);
+}
+
+.title{
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+}
+.advice,
+.quotation-marks{
+    color: hsl(193, 38%, 86%);
+    margin: 2rem 0;
+    font-size: 20px;
+}
+
+.diviser{
+    margin: 10px;
+    width: 100%;
+}
+.btn-div{
+    position: absolute;
+   top: 71%;
+   left: 48.5%;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color:  hsl(150, 100%, 66%);
+   cursor: pointer;
+}
+
+.btn{
+    margin-top: 12px;
+}
+
+.btn-div:hover{
+    box-shadow: rgba( 82, 255, 169, 0.466) 0px 8px 24px,
+    rgba( 82, 255, 169, 0.411) 0px 16px 56px,
+    rgba( 82, 255, 169, 0.479) 0px 24px 80px;
+}
+
+
+@media(max-width: 425px){
+    .card{
+        margin: 0 2rem;
+        height: 45vh;
+    }
+    .btn-div{
+       top: 76%;
+       left: 45%;
+    }
+}
+@media(max-width: 375px){
+    .btn-div{
+       top: 76%;
+       left: 43%;
+    }
+}
